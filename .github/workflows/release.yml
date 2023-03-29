@@ -19,6 +19,6 @@ jobs:
       - name: run release
         run: yarn release:ci
         env:
-          GITHUB_TOKEN: ${{ secrets.CUSTOM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: End Message
         run: 'Release is done!'
