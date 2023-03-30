@@ -13,13 +13,13 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install dependencies
-        run: yarn install
+        run: npm install
       - name: Initialize git user
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
       - name: run release
-        run: yarn release:ci
+        run: npm run release:ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: End Message
