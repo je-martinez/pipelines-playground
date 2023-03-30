@@ -23,4 +23,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: End Message
-        run: 'Release is done!'
+        run: echo 'Release is done!'
