@@ -8,7 +8,6 @@
     "release": true
   },
   "hooks": {
-    "before:init": "git fetch --prune --prune-tags origin",
     "after:bump": "npx auto-changelog -p"
   }
 }
