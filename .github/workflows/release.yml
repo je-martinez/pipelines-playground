@@ -22,8 +22,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
       - name: Just in case they're duplicate tag names
         run: git fetch --prune --prune-tags origin && git pull origin $CI_BUILD_REF_NAME
-      - name: Create new branch for new release
-        run: git checkout -b feature/new-release
+      # - name: Create new branch for new release
+      #   run: git checkout -b feature/new-release
       - name: run release
         run: npm run release:ci
         env:

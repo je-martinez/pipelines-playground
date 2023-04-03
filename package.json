@@ -1,11 +1,11 @@
 {
   "name": "pipeline-playground",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "release": "release-it --no-git.requireUpstream -- patch --git.pushArgs=--force",
-    "release:ci": "release-it --no-git.requireUpstream --ci -- patch --git.pushArgs=--force",
+    "release": "release-it --git.pushArgs=--force -- patch",
+    "release:ci": "release-it --git.pushArgs=--force --ci -- patch",
     "prepare": "husky install",
     "test": "echo Testing-Time!"
   },
