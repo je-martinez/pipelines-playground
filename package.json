@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "release": "release-it --git.pushArgs=--force -- patch",
-    "release:ci": "release-it --git.pushArgs=--force --ci -- patch",
+    "release": "release-it -- patch",
+    "release:ci": "release-it --no-git.requireUpstream --ci -- patch",
     "prepare": "husky install",
     "test": "echo Testing-Time!"
   },
